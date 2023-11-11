@@ -1,5 +1,6 @@
 package pages;
 
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utils.ElementHelper;
@@ -51,6 +52,12 @@ public class BecomeOurPartnerPage {
     }
 
     public void clickLetsGrabACoffeeAreaTypeOfBusines() {
+        elementHelper.checkElement(GrabACoffeeAreaTypeOfBusines);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         elementHelper.click(GrabACoffeeAreaTypeOfBusines);
     }
 
@@ -71,6 +78,12 @@ public class BecomeOurPartnerPage {
     }
 
     public void selectLetsGrabACoffeeAreaOther(String text) {
+        elementHelper.checkElement(LetsGrabACoffeeAreaTypeOfBusinessTextBox);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         elementHelper.click(LetsGrabACoffeeAreaTypeOfBusinessTextBox);
         elementHelper.clickElementWithText(LetsGrabACoffeeAreaOther,text);
     }

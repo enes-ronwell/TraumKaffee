@@ -49,6 +49,10 @@ public class AccountDetailsPage {
         elementHelper.clear(AccountDetailsAreaFirstNameTextBox);
     }
 
+    public void clickAccountDetailsAreaFirstName() {
+        elementHelper.click(AccountDetailsAreaFirstNameTextBox);
+    }
+
     public void clearAccountDetailsAreaLastName() {
         elementHelper.clear(AccountDetailsAreaLastNameTextBox);
     }

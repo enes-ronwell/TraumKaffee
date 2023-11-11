@@ -124,6 +124,11 @@ public class NavigationBar {
     }
 
     public void clickNavBarAreaMyAccount() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         elementHelper.click(NavBarAreaMyAccount);
     }
 

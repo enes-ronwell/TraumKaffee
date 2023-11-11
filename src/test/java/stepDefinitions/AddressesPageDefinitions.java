@@ -30,6 +30,11 @@ public class AddressesPageDefinitions {
 
     @When("click Addresses Area Country Dropdown on Addresses Page")
     public void clickAddressesAreaCountryDropdownOnAddressesPage() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         addressesPage.clickAddressesAreaCountryDropdown();
     }
 
@@ -371,7 +376,6 @@ public class AddressesPageDefinitions {
         homePage.goToHomePage("https://dev.traumkaffee.com/");
         NavigationBar.clickNavBarAreaSignIn();
         SignInPage.successfullySignInWithMailAndPassword(mail, pass);
-        general.clickPopupCloseIcon();
         NavigationBar.clickNavBarAreaMyAccount();
         myAccountPage.clickMyAccountAreaAddresses();
         addressesPage.shouldSeeAddressesPage();

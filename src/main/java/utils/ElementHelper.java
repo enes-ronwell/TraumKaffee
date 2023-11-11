@@ -69,7 +69,12 @@ public class ElementHelper {
     public WebElement findElement(By by) {
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(by));
         scrollToElement(element);
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
 

@@ -22,9 +22,7 @@ public class AccountDetailsPageDefinitions {
         homePage.goToHomePage("https://dev.traumkaffee.com/");
         NavigationBar.clickNavBarAreaSignIn();
         SignInPage.successfullySignInWithMailAndPassword(mail, pass);
-        general.clickPopupCloseIcon();
         NavigationBar.clickNavBarAreaMyAccount();
-
     }
 
     //WHEN's
@@ -57,7 +55,7 @@ public class AccountDetailsPageDefinitions {
 
     @When("clear Account Details Area First Name on Account Details Page")
     public void clearAccountDetailsAreaFirstNameOnAccountDetailsPage() {
-        accountDetailsPage.clearAccountDetailsAreaFirstName();
+        accountDetailsPage.sendkeysAccountDetailsAreaFirstName("");
     }
 
     @When("clear Account Details Area Last Name on Account Details Page")
