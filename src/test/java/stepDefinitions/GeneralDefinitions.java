@@ -19,10 +19,7 @@ public class GeneralDefinitions {
         general.tapsNavigateBack();
     }
 
-    @When("click Popup Close Icon")
-    public void clickPopupCloseIcon() {
-        general.clickPopupCloseIcon();
-    }
+
 
     //THEN's
     @Then("should see the Traum Kaffee Facebook Page")

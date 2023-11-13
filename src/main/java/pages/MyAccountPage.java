@@ -19,6 +19,7 @@ public class MyAccountPage {
     private By MyAccountAreaOrderHistoryImage = By.cssSelector(".pb-6.px-6.pt-4>ul>li:nth-child(3) svg");
     private By MyAccountAreaSignOutImage = By.cssSelector(".pb-6.px-6.pt-4>ul>li:nth-child(5)>a>svg");
     private By SignInButton = By.cssSelector(".mb-10>button");
+    private By MyAccountButton = By.cssSelector(".mr-0>div:nth-child(1) button");
 
 
     public MyAccountPage(WebDriver driver) {
@@ -29,6 +30,12 @@ public class MyAccountPage {
         elementHelper.sendKeys(EmailTextbox, mail);
         elementHelper.sendKeys(SeePasswordTextbox, pass);
         elementHelper.click(SignInButton);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        elementHelper.click(MyAccountButton);
     }
 
     public void clickMyAccountAreaAccount() {

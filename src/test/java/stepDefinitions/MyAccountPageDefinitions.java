@@ -21,8 +21,8 @@ public class MyAccountPageDefinitions {
     public void userOnTheMyAccountPageWithMailAndPassword(String mail, String pass) {
         SignInPage.userOnTheSignInPage();
         myAccountPage.userOnTheMyAccountPageWithMailAndPassword(mail, pass);
-        general.clickPopupCloseIcon();
-        NavigationBar.clickNavBarAreaMyAccount();
+
+
     }
 
     //WHEN's

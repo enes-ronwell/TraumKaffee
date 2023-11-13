@@ -114,7 +114,7 @@ public class SignInPageDefinitions {
     public void successfullySignInWithMailAndPasswordOnSignInPage(String mail, String pass) {
         NavigationBar.clickNavBarAreaSignIn();
         SignInPage.successfullySignInWithMailAndPassword(mail, pass);
-        general.clickPopupCloseIcon();
+        //general.clickPopupCloseIcon();
     }
 
     @Then("should see Password Empty Message: {string} on Sign In Page")

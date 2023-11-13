@@ -35,7 +35,7 @@ public class ProductDetailPageDefinitions {
     //THEN's
     @Then("should see the Product Detail Page")
     public void shouldSeeTheProductDetailPage() {
-        productDetailPage.shouldSeeTheProductDetailPage("products/");
+        productDetailPage.shouldSeeTheProductDetailPage("https://dev.traumkaffee.com/product");
     }
 
     @Then("should see Name: {string} on Product Detail Page")

@@ -35,7 +35,7 @@ public class ProductsPageDefinitions {
     //THEN's
     @Then("should see the Products Page")
     public void shouldSeeTheProductsPage() {
-        productsPage.checkProductsPage("https://dev.traumkaffee.com/products");
+        productsPage.checkProductsPage("https://dev.traumkaffee.com/product");
     }
 
     @Then("should see Categories Area Title: {string} on Products Page")

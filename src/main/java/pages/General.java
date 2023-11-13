@@ -65,12 +65,12 @@ public class General {
         elementHelper.checkElement(PopupIcon);
     }
 
-    public void clickPopupCloseIcon(){
+    /*public void clickPopupCloseIcon(){
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         elementHelper.click(PopupCloseIcon);
-    }
+    }*/
 }

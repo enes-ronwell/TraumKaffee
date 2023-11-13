@@ -125,7 +125,7 @@ public class NavigationBar {
 
     public void clickNavBarAreaMyAccount() {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

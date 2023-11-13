@@ -100,7 +100,7 @@ public class ShoppingCartPage {
     }
 
     public void shouldSeeTheShoppingCartPage() {
-        elementHelper.checkUrl("https://dev.traumkaffee.com/shoppingCart");
+        elementHelper.checkUrl("https://dev.traumkaffee.com/product");
     }
 
     public String shouldSeeFeaturedItemsAreaTitle() {

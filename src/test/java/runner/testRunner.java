@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        tags = "@Deneme",
+        tags = "not @ProductDetailPage and not @ProductsPage and not ShoppingCartPage and not @HomePage and not @WhosalePage",
         features = "src/test/resources/features",
         glue = {"stepDefinitions", "utils"},
         plugin = {
