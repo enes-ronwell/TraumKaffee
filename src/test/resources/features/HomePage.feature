@@ -144,21 +144,21 @@ Feature: Home Page
     Given user on the Home Page
     When click First Product's Image in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Traum Kickstart Capsule Coffee X 10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @Navigation @FirstProduct
   Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click First Product's Name in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Traum Kickstart Capsule Coffee X 10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @Navigation @FirstProduct
   Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click First Product's Price in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Traum Kickstart Capsule Coffee X 10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @AddBasket @FirstProduct
   Scenario: User should see the Cart Count Increasing by One when clicked the First Product’s Add Button in the Products Area on Home Page
@@ -174,21 +174,21 @@ Feature: Home Page
     Given user on the Home Page
     When click Second Product's Image in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Kenya Capsule Coffee X10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @Navigation @SecondProduct
   Scenario: User should see Second Product’s Product Detail Page when clicked Second Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Second Product's Name in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Kenya Capsule Coffee X10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @Navigation @SecondProduct
   Scenario: User should see Second Product’s Product Detail Page when clicked Second Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Second Product's Price in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Kenya Capsule Coffee X10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @AddBasket @SecondProduct
   Scenario: User should see the Cart Count Increasing by One when clicked the Second Product’s Add Button  in the Products Area on Home Page
@@ -204,21 +204,21 @@ Feature: Home Page
     Given user on the Home Page
     When click Third Product's Image in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Chocolate Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @Navigation @ThirdProduct
   Scenario: User should see Third Product’s Product Detail Page when clicked Third Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Third Product's Name in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Chocolate Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @Navigation @ThirdProduct
   Scenario: User should see Third Product’s Product Detail Page when clicked Third Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Third Product's Price in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Chocolate Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @AddBasket @ThirdProduct
   Scenario: User should see the Cart Count Increasing by One when clicked the Third Product’s Add Button in the Products Area on Home Page
@@ -234,21 +234,21 @@ Feature: Home Page
     Given user on the Home Page
     When click Fourth Product's Image in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Almond Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @Navigation @FourthProduct
   Scenario: User should see Fourth Product’s Product Detail Page when clicked Fourth Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Fourth Product's Name in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Almond Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @Navigation @FourthProduct
   Scenario: User should see Fourth Product’s Product Detail Page when clicked Fourth Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Fourth Product's Price in the Products Area
     Then should see the Product Detail Page
-    Then should see Name: "Almond Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @ProductsArea @AddBasket @FourthProduct
   Scenario: User should see the Cart Count Increasing by One when clicked the Fourth Product’s Add Button in the Products Area on Home Page
@@ -284,7 +284,7 @@ Feature: Home Page
     When click Favorites Area First Product Image on Home Page
     When click First Product's Price in the Favorites Area
     Then should see the Product Detail Page
-    Then should see Name: "Traum Kickstart Capsule Coffee X 10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @FavoritesArea @SecondProduct
   Scenario: User should see Second Product’s Price and Add Button when clicked Second Product’s Image in the Customer Favorites Area on Home Page
@@ -299,7 +299,7 @@ Feature: Home Page
     When click Favorites Area Second Product Image on Home Page
     When click Second Product's Price in the Favorites Area
     Then should see the Product Detail Page
-    Then should see Name: "Kenya Capsule Coffee X10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @FavoritesArea @ThirdProduct
   Scenario: User should see Third Product’s Price and Add Button when clicked Third Product’s Image in the Customer Favorites Area on Home Page
@@ -314,7 +314,7 @@ Feature: Home Page
     When click Favorites Area Third Product Image on Home Page
     When click Third Product's Price in the Favorites Area
     Then should see the Product Detail Page
-    Then should see Name: "Chocolate Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @FavoritesArea @FourthProduct
   Scenario: User should see Fourth Product’s Price and Add Button when clicked Fourth Product’s Image in the Customer Favorites Area on Home Page
@@ -329,35 +329,35 @@ Feature: Home Page
     When click Favorites Area Fourth Product Image on Home Page
     When click Fourth Product's Price in the Favorites Area
     Then should see the Product Detail Page
-    Then should see Name: "Almond Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @FavoritesArea @Navigation @FirstProduct
   Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Name in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area First Product Name on Home Page
     Then should see the Product Detail Page
-    Then should see Name: "Traum Kickstart Capsule Coffee X 10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @FavoritesArea @Navigation @SecondProduct
   Scenario: User should see Second Product’s Product Detail Page when clicked Second Product’s Name in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Second Product Name on Home Page
     Then should see the Product Detail Page
-    Then should see Name: "Kenya Capsule Coffee X10" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @FavoritesArea @Navigation @ThirdProduct
   Scenario: User should see Third Product’s Product Detail Page when clicked Third Product’s Name in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Third Product Name on Home Page
     Then should see the Product Detail Page
-    Then should see Name: "Chocolate Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @FavoritesArea @Navigation @FourthProduct
   Scenario: User should see Fourth Product’s Product Detail Page when clicked Fourth Product’s Name in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Fourth Product Name on Home Page
     Then should see the Product Detail Page
-    Then should see Name: "Almond Colombia Coffee" on Product Detail Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
 
   @FavoritesArea @AddBasket @FirstProduct
   Scenario: User should see the Cart Count Increasing by One when clicked the First Product’s Add Button in the Customer Favorites Area on Home Page

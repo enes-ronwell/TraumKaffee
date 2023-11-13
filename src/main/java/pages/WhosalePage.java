@@ -92,6 +92,18 @@ public class WhosalePage {
     private By LetsGrabACoffeeAreaTypeOfBusinessError = By.cssSelector(".flex.flex-col.space-y-6>p:nth-child(10)");
     private By LetsGrabACoffeeAreaTellUsError = By.cssSelector(".mx-4 .flex.flex-col.h-full  p");
     private By LetsGrabACoffeeAreaEmail = By.cssSelector(".space-y-6>input:nth-child(2)");
+    private By CafesAndCoffeeShopsImage = By.cssSelector("#wholesale-discover > div > div:nth-child(1)");
+    private By HotelsImage = By.cssSelector("#wholesale-discover > div > div:nth-child(2)");
+    private By RestaurantsImage = By.cssSelector("#wholesale-discover > div > div:nth-child(3)");
+    private By OfficesImage = By.cssSelector("#wholesale-discover > div > div:nth-child(4)");
+    private By TrainingImage= By.cssSelector("#wholesale-discover > div > div:nth-child(5)");
+    private By EquipmentImage= By.cssSelector("#wholesale-discover > div > div:nth-child(6)");
+    private By CafesAndCoffeeShopsText = By.cssSelector("#wholesale-discover > div > div:nth-child(1) > h3");
+    private By HotelsText= By.cssSelector("#wholesale-discover > div > div:nth-child(2) > h3");
+    private By RestaurantsText= By.cssSelector("#wholesale-discover > div > div:nth-child(3) > h3");
+    private By OfficesText= By.cssSelector("#wholesale-discover > div > div:nth-child(4) > h3");
+    private By TrainingText= By.cssSelector("#wholesale-discover > div > div:nth-child(5) > h3");
+    private By EquipmentText= By.cssSelector("#wholesale-discover > div > div:nth-child(6) > h3");
 
     private String url = "https://dev.traumkaffee.com/wholesale";
 
@@ -486,6 +498,43 @@ public class WhosalePage {
     public String shouldSeeLetsGrabACoffeeAreaTellUsError() {
         return elementHelper.getText(LetsGrabACoffeeAreaTellUsError);
     }
+    public void clickCafesAndCoffeeShopsImageInTheDiscoverArea(){
+        elementHelper.click(CafesAndCoffeeShopsImage);
+    }
+    public void clickHotelsImageInTheDiscoverArea(){
+        elementHelper.click(HotelsImage);
+    }
+    public void clickRestaurantsImageInTheDiscoverArea(){
+        elementHelper.click(RestaurantsImage);
+    }
+    public void clickOfficesImageInTheDiscoverArea(){
+        elementHelper.click(OfficesImage);
+    }
+    public void clickTrainingImageInTheDiscoverArea(){
+        elementHelper.click(TrainingImage);
+    }
+    public void clickEquipmentImageInTheDiscoverArea(){
+        elementHelper.click(EquipmentImage);
+    }
+    public void clickCafesAndCoffeeShopsTextInTheDiscoverArea(){
+        elementHelper.click(CafesAndCoffeeShopsText);
+    }
+    public void clickHotelsTextInTheDiscoverArea(){
+        elementHelper.click(HotelsText);
+    }
+    public void clickRestaurantsTextInTheDiscoverArea(){
+        elementHelper.click(RestaurantsText);
+    }
+    public void clickOfficesTextInTheDiscoverArea(){
+        elementHelper.click(OfficesText);
+    }
+    public void clickTrainingTextInTheDiscoverArea(){
+        elementHelper.click(TrainingText);
+    }
+    public void clickEquipmentTextInTheDiscoverArea(){
+        elementHelper.click(EquipmentText);
+    }
+
 
 }
 

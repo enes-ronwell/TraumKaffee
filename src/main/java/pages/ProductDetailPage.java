@@ -16,7 +16,7 @@ public class ProductDetailPage {
     private By ContinueShoppingButton=By.cssSelector(".pb-8>div:nth-child(2)>button");
     private By AddToCartButton=By.cssSelector(".pb-8>div:nth-child(2) span");
     private By QuantityUpIcon=By.cssSelector(".cursor-pointer.text-xl.px-3.py-1");
-    private By Name=By.cssSelector("#product-details .font-extrabold");
+    private By Name=By.cssSelector(".my-0");
     private By ProductPath=By.cssSelector(".mb-8 .px-4>div:nth-child(1)");
     private By ProductName=By.cssSelector("#product-details .font-extrabold");
     private By ProductDescription=By.cssSelector(".mb-8 .px-4>div:nth-child(2) p");

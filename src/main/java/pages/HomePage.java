@@ -36,9 +36,9 @@ public class HomePage {
     private final By BrewGuidesAreaButton = By.cssSelector("#testimonialsSlide > div:nth-of-type(2) #arrow-btn");
     private final By TwitsAreaFirstTwitInstagramIcon = By.cssSelector("#social-section > .flex > div:nth-of-type(1) #instagram-icon > [width='25']");
     private final By TwitsAreaSecondTwitTwitterIcon = By.cssSelector("#social-section > .flex > div:nth-of-type(1) #twitter-icon > [width='25']");
-    private final By TwitsAreaThirdTwitTwitterIcon = By.cssSelector("#social-section div:nth-of-type(1) > #twitter-icon > [width='25']");
-    private final By TwitsAreaFourthTwitInstagramIcon = By.cssSelector(".flex.flex-col>div:nth-child(2) #instagram-icon");
-    private final By TwitsAreaFifthTwitInstagramIcon = By.cssSelector("#social-section div:nth-of-type(3) #instagram-icon > [width='25']");
+    private final By TwitsAreaThirdTwitTwitterIcon = By.cssSelector("#social-section div:nth-of-type(1) > #twitter-icon");
+    private final By TwitsAreaFourthTwitInstagramIcon = By.cssSelector("#social-section div:nth-of-type(2) > #instagram-icon");
+    private final By TwitsAreaFifthTwitInstagramIcon = By.cssSelector("#social-section div:nth-of-type(3) #instagram-icon");
     private final By TwitsAreaSixthTwitTwitterIcon = By.cssSelector("#social-section div:nth-of-type(3) #twitter-icon > [width='25']");
     private final By FavoritesAreaTitle = By.cssSelector("div>div#customer-favorites>div>h3.uppercase");
     private final By FavoritesAreaFirstProductImage = By.cssSelector("#customer-favorites .grid.grid-cols-2.gap-4.px-4.pt-8.mb-16>div:nth-child(1) img");

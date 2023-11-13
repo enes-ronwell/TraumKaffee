@@ -105,6 +105,65 @@ public class WhosalePageDefinitions {
     public void clickPartnershipPerksAreaTrainingButtonOnWhosalePage() {
         WhosalePage.clickPartnershipPerksAreaTrainingButton();
     }
+    @When("click Cafes and Coffee Shops Image in the Discover Area on Whosale Page")
+    public void clickCafesAndCoffeeShopsImageInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickCafesAndCoffeeShopsImageInTheDiscoverArea();
+    }
+
+    @When("click Cafes and Coffee Shops Text in the Discover Area on Whosale Page")
+    public void clickCafesAndCoffeeShopsTextInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickCafesAndCoffeeShopsTextInTheDiscoverArea();
+    }
+
+    @When("click Hotels Image in the Discover Area on Whosale Page")
+    public void clickHotelsImageInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickHotelsImageInTheDiscoverArea();
+    }
+
+    @When("click Hotels Text in the Discover Area on Whosale Page")
+    public void clickHotelsTextInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickHotelsTextInTheDiscoverArea();
+    }
+
+    @When("click Restaurants Image in the Discover Area on Whosale Page")
+    public void clickRestaurantsImageInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickRestaurantsImageInTheDiscoverArea();
+    }
+
+    @When("click Restaurants Text in the Discover Area on Whosale Page")
+    public void clickRestaurantsTextInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickRestaurantsTextInTheDiscoverArea();
+    }
+
+    @When("click Offices Image in the Discover Area on Whosale Page")
+    public void clickOfficesImageInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickOfficesImageInTheDiscoverArea();
+    }
+
+    @When("click Offices Text in the Discover Area on Whosale Page")
+    public void clickOfficesTextInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickOfficesTextInTheDiscoverArea();
+    }
+
+    @When("click Training Image in the Discover Area on Whosale Page")
+    public void clickTrainingImageInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickTrainingImageInTheDiscoverArea();
+    }
+
+    @When("click Training Text in the Discover Area on Whosale Page")
+    public void clickTrainingTextInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickTrainingTextInTheDiscoverArea();
+    }
+
+    @When("click Equipment Image in the Discover Area on Whosale Page")
+    public void clickEquipmentImageInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickEquipmentImageInTheDiscoverArea();
+    }
+
+    @When("click Equipment Text in the Discover Area on Whosale Page")
+    public void clickEquipmentTextInTheDiscoverAreaOnWhosalePage() {
+        WhosalePage.clickEquipmentTextInTheDiscoverArea();
+    }
 
     //THEN's
     @Then("should see the Whosale Page")
@@ -560,4 +619,6 @@ public class WhosalePageDefinitions {
         String expText = WhosalePage.shouldSeeLetsGrabACoffeeAreaTellUsError();
         Assert.assertEquals(expText, text);
     }
+
+
 }
