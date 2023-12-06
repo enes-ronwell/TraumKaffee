@@ -45,13 +45,15 @@ public class Shop2Page {
     private By NoItems=By.cssSelector("[width='100']");
     private By CompleteYourOrder=By.cssSelector(".w-full.flex-row > div:nth-of-type(2)");
     private By AED=By.cssSelector(".w-full.flex-row > div:nth-of-type(3)");
+    private final By firstStoreOrderNowButton = By.cssSelector(".mt-0.mb-4>div:nth-child(1) button");
 
 
-    private String url = "https://dev.traumkaffee.com/product/shop2";
+    private String url = "https://dev.traumkaffee.com/product";
 
 
     public void userOnTheShopTwoPage() {
         elementHelper.openUrl(url);
+        elementHelper.click(firstStoreOrderNowButton);
     }
 
     public void userShouldSeeChangeButton() {

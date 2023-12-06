@@ -25,8 +25,8 @@ Feature: Shop2Page
     Then user should see Burundi Drip Coffee Title "Burundi Drip Coffee" on ShopTwo Page
     Then user should see Burundi Drip Coffee price : "AED80" on ShopTwo Page
     Then user should see Burundi Drip Coffee Image on ShopTwo Page
-    Then user should see Basket : "Basket" on ShopTwo Page
-    Then user should see Complete Your Order Title : "Complete Your Order Title" on ShopTwo Page
+    Then user should see Basket : "BASKET" on ShopTwo Page
+    Then user should see Complete Your Order Title : "COMPLETE YOUR ORDER" on ShopTwo Page
 
   Scenario: Whole Bean Coffees Button Control
     Given user on the ShopTwo Page
@@ -45,7 +45,7 @@ Feature: Shop2Page
 
   Scenario: Basket Control
     Given user on the ShopTwo Page
-    Then user should see Basket : "Basket" on ShopTwo Page
+    Then user should see Basket : "BASKET" on ShopTwo Page
     Then user should see No Items : "NO ITEMS" on ShopTwo Page
     Then user should see Complete Your Order : "COMPLETE YOUR ORDER" on ShopTwo Page
     Then user should see AED : "AED0" on ShopTwo Page

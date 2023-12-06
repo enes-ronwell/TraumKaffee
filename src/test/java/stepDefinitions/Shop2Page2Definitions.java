@@ -11,6 +11,7 @@ public class Shop2Page2Definitions {
     Shop2Page2 shop2Page2 = new Shop2Page2(DriverFactory.getDriver());
     @Given("user on the ShopTwo PageTwo")
     public void userOnTheShopTwoPageTwo() {
+        shop2Page2.userOnTheShopTwoPageTwo();
     }
 
     @Then("user should see Change Button on ShopTwo PageTwo")
