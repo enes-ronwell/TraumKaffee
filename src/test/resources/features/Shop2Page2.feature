@@ -25,7 +25,7 @@ Feature: Shop2Page2
     Then user should see El Salvador Apaneca Coffee Price : "AED50" on ShopTwo PageTwo
     Then user should see Honduras Opalca Coffee Title : "Honduras Opalca Coffee" on ShopTwo PageTwo
     Then user should see Honduras Opalca Coffee Price : "AED50" on ShopTwo PageTwo
-    Then user should see Traum Kick Start Capsule Coffee Title : "Traum Kickstart Capsule Coffee x10" on ShopTwo PageTwo
+    Then user should see Traum Kick Start Capsule Coffee Title : "Traum Kickstart Capsule Coffee x 10" on ShopTwo PageTwo
     Then user should see Traum Kick Start Capsule Coffee Price : "AED12" on ShopTwo PageTwo
     Then user should see Kenya Capsule Coffee Title :"Kenya Capsule Coffee x10" on ShopTwo PageTwo
     Then user should see Kenya Capsule Coffee Price : "AED1" on ShopTwo PageTwo
@@ -71,7 +71,7 @@ Feature: Shop2Page2
 
   Scenario: Basket Control
     Given user on the ShopTwo PageTwo
-    Then user should see Basket : "Basket" on ShopTwo PageTwo
+    Then user should see Basket : "BASKET" on ShopTwo PageTwo
     Then user should see No Items : "NO ITEMS" on ShopTwo PageTwo
     Then user should see Complete Your Order : "COMPLETE YOUR ORDER" on ShopTwo PageTwo
     Then user should see AED : "AED0" on ShopTwo PageTwo
