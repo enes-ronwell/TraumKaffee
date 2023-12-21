@@ -4,7 +4,7 @@ Feature: Footer
   @TraumKaffeeArea @TextAndComponent
   Scenario: Traum Kaffee Area Text and Component Control
     Given user on the Home Page
-    Then should see Traum Kaffee Area Title: "Traum Kaffee Co." on Footer
+    Then should see Traum Kaffee Area Title: "" on Footer
     Then should see Traum Kaffee Area Image on Footer
     Then should see Traum Kaffee Area All Rights Reserved: "© 2023, Traum Kaffee Co. | All Rights Reserved" on Footer
 

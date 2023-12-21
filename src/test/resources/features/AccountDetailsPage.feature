@@ -13,9 +13,10 @@ Feature: Account Details Page
     Then should see Account Details Area Checkbox on Account Details Page
     Then should see Account Details Area Update: "UPDATE" on Account Details Page
 
-  @AccountDetailsArea @Empty @FirstName @Hatali
+  @AccountDetailsArea @Empty @FirstName @A
   Scenario: Account Details Area Empty First Name Control
     Given user on the Account Details Page with Mail:"accountDetailsTestAutomation1@ronwell.net" and Password:"Ronwell.2023"
+    When user click First Name Text Box on Account Details Page
     When clear Account Details Area First Name on Account Details Page
     When sendkeys Account Details Area Last Name: "Digital" on Account Details Page
     When click Account Details Area Update on Account Details Page
@@ -23,7 +24,7 @@ Feature: Account Details Page
     Then should see Popup Icon
     Then should see Popup Message: "Something went wrong"
 
-  @AccountDetailsArea @Empty @LastName @Hatali
+  @AccountDetailsArea @Empty @LastName @A
   Scenario: Account Details Area Empty Last Name Control
     Given user on the Account Details Page with Mail:"accountDetailsTestAutomation1@ronwell.net" and Password:"Ronwell.2023"
     When sendkeys Account Details Area First Name: "Ronwell" on Account Details Page

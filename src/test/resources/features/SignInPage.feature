@@ -189,7 +189,7 @@ Feature: Sign In Page
 
   @Successfull @Navigate @ShoppingCart
   Scenario: Successfull SignIn Shopping Cart Page Navigate Control
-    Given user on the Shopping Cart Page
+    Given user on the Store Selection Page
     Given successfully Sign In with Mail:"otomasyonmail@ronwell.net" and Password:"Otomasyon.12" on Sign In Page
     Then should see the Home Page
 
@@ -220,22 +220,6 @@ Feature: Sign In Page
   @Successfull @NavigateBack @HomePage
   Scenario: Successfull SignIn Home Page Navigate Control
     Given user on the Home Page
-    Given successfully Sign In with Mail:"otomasyonmail@ronwell.net" and Password:"Otomasyon.12" on Sign In Page
-    Then should see the Home Page
-    When taps navigate back
-    Then should see the Home Page
-
-  @Successfull @NavigateBack @Products
-  Scenario: Successfull SignIn Products Page Navigate Control
-    Given user on the Products Page
-    Given successfully Sign In with Mail:"otomasyonmail@ronwell.net" and Password:"Otomasyon.12" on Sign In Page
-    Then should see the Home Page
-    When taps navigate back
-    Then should see the Home Page
-
-  @Successfull @NavigateBack @ProductDetail
-  Scenario: Successfull SignIn Product Detail Page Navigate Control
-    Given user on the Product Detail Page
     Given successfully Sign In with Mail:"otomasyonmail@ronwell.net" and Password:"Otomasyon.12" on Sign In Page
     Then should see the Home Page
     When taps navigate back

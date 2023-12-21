@@ -40,26 +40,6 @@ public class HomePageDefinitions {
         homePage.clickHomePageAreaTwitterButton();
     }
 
-    @When("click Products Area First Product Add Button on Home Page")
-    public void clickFirstProductAddButton() {
-        homePage.clickFirstProductAddButton();
-    }
-
-    @When("click Products Area Second Product Add Button on Home Page")
-    public void clickSecondProductAddButton() {
-        homePage.clickSecondProductAddButton();
-    }
-
-    @When("click Products Area Third Product Add Button on Home Page")
-    public void clickThirdProductAddButton() {
-        homePage.clickThirdProductAddButton();
-    }
-
-    @When("click Products Area Fourth Product Add Button on Home Page")
-    public void clickFourthProductAddButton() {
-        homePage.clickFourthProductAddButton();
-    }
-
     @When("click Products Area Show All Products Button on Home Page")
     public void clickProductsAreaShowAllProductsButtonOnHomePage() {
         homePage.clickProductsAreaShowAllProductsButton();
@@ -103,9 +83,7 @@ public class HomePageDefinitions {
 
     @When("click Twits Area Fourth Twit Instagram Icon on Home Page")
     public void clickTwitsAreaFourthTwitInstagramIconOnHomePage() {
-        homePage.clickTwitsAreaFourthTwitInstagramIcon();
-
-    }
+        homePage.clickTwitsAreaFourthTwitInstagramIcon(); }
 
     @When("click Twits Area Fifth Twit Instagram Icon on Home Page")
     public void clickTwitsAreaFifthTwitInstagramIconOnHomePage() {
@@ -712,11 +690,6 @@ public class HomePageDefinitions {
         Assert.assertEquals(FavoritesAreaFirstProductPrice, price);
     }
 
-    @Then("should see Favorites Area First Product Add Button on Home Page")
-    public void shouldSeeFavoritesAreaFirstProductAddButtonOnHomePage() {
-        homePage.checkFavoritesAreaFirstProductAddButton();
-    }
-
     @Then("should see Favorites Area Second Product Image on Home Page")
     public void shouldSeeFavoritesAreaSecondProductImageOnHomePage() {
         homePage.checkFavoritesAreaSecondProductImage();
@@ -732,11 +705,6 @@ public class HomePageDefinitions {
     public void shouldSeeFavoritesAreaSecondProductPriceOnHomePage(String price) {
         String FavoritesAreaSecondProductPrice = homePage.checkFavoritesAreaSecondProductPrice();
         Assert.assertEquals(FavoritesAreaSecondProductPrice, price);
-    }
-
-    @Then("should see Favorites Area Second Product Add Button on Home Page")
-    public void shouldSeeFavoritesAreaSecondProductAddButtonOnHomePage() {
-        homePage.checkFavoritesAreaSecondProductAddButton();
     }
 
     @Then("should see Favorites Area Third Product Image on Home Page")
@@ -756,12 +724,6 @@ public class HomePageDefinitions {
         Assert.assertEquals(FavoritesAreaThirdProductPrice, price);
     }
 
-    @Then("should see Favorites Area Third Product Add Button on Home Page")
-    public void shouldSeeFavoritesAreaThirdProductAddButtonOnHomePage() {
-        homePage.checkFavoritesAreaThirdProductAddButton();
-
-    }
-
     @Then("should see Favorites Area Fourth Product Image on Home Page")
     public void shouldSeeFavoritesAreaFourthProductImageOnHomePage() {
         homePage.checkFavoritesAreaFourthProductImage();
@@ -778,12 +740,6 @@ public class HomePageDefinitions {
     public void shouldSeeFavoritesAreaFourthProductPriceOnHomePage(String price) {
         String FavoritesAreaFourthProductPrice = homePage.checkFavoritesAreaFourthProductPrice();
         Assert.assertEquals(FavoritesAreaFourthProductPrice, price);
-
-    }
-
-    @Then("should see Favorites Area Fourth Product Add Button on Home Page")
-    public void shouldSeeFavoritesAreaFourthProductAddButtonOnHomePage() {
-        homePage.checkFavoritesAreaFourthProductAddButton();
 
     }
 
@@ -876,6 +832,16 @@ public class HomePageDefinitions {
     public void shouldSeeFavoritesAreaFourthProductDiscountPriceOnHomePage(String price) {
         String FavoritesAreaFourthProductDiscountPrice = homePage.checkFavoritesAreaFourthProductDiscountPrice();
         Assert.assertEquals(FavoritesAreaFourthProductDiscountPrice, price);
+    }
+
+    @Then("should see the Store Selection Page")
+    public void shouldSeeTheStoreSelectionPage() {
+        homePage.checkStoreSelectionPage();
+    }
+    @Then("should see Name: {string} on Store Selection Page")
+    public void shouldSeeNameOnStoreSelectionPage(String title) {
+        String pageTitle = homePage.checkTitleOnStoreSelectionPage();
+        Assert.assertEquals(pageTitle, title);
     }
 
 }

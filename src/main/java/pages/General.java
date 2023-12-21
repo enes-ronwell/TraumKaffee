@@ -13,7 +13,7 @@ public class General {
         elementHelper = new ElementHelper(driver);
     }
 
-    private By NavigateBack = By.id("");
+
     private By PopupMessage = By.cssSelector(".Toastify .Toastify__toast-body div:nth-child(2)");
     private By PopupCloseIcon = By.cssSelector(".Toastify button");
     private By PopupIcon = By.cssSelector(".Toastify .Toastify__toast-icon");

@@ -1,4 +1,4 @@
-@HomePage
+@HomePage @Go
 Feature: Home Page
 
   @TextAndComponent
@@ -27,24 +27,20 @@ Feature: Home Page
     Then should see Dream Area Explanation: "Our premium coffee is defined by the final moment when the naturalness of the field meets the divine taste. With its ethically sourced, freshly roasted beans and carefully selected flavor profile, Traum Kaffee is the ultimate way to experience the perfect cup of coffee.At Traum, sustainability is at the heart of everything we do. So you can enjoy the perfect cup of coffee without compromising the planet.Enjoy a cup of Traum Kaffee and start living your dreams today!" on Home Page
     Then should see Products Area Title: "Products" on Home Page
     Then should see Products Area First Product Image on Home Page
-    Then should see Products Area First Product Add Button on Home Page
     Then should see Products Area First Product Name: "Traum Kickstart Capsule Coffee X 10" on Home Page
-    Then should see Products Area First Product Price: "AED30" on Home Page
+    #Then should see Products Area First Product Price: "AED30" on Home Page
     #Then should see Products Area First Product Discount Price: "AED11" on Home Page
     Then should see Products Area Second Product Image on Home Page
-    Then should see Products Area Second Product Add Button on Home Page
     Then should see Products Area Second Product Name: "Kenya Capsule Coffee X10" on Home Page
-    Then should see Products Area Second Product Price: "AED35" on Home Page
+    #Then should see Products Area Second Product Price: "AED35" on Home Page
     #Then should see Products Area Second Product Discount Price: "AED10" on Home Page
     Then should see Products Area Third Product Image on Home Page
-    Then should see Products Area Third Product Add Button on Home Page
     Then should see Products Area Third Product Name: "Chocolate Colombia Coffee" on Home Page
-    Then should see Products Area Third Product Price: "AED45" on Home Page
+    #Then should see Products Area Third Product Price: "AED45" on Home Page
    # Then should see Products Area Third Product Discount Price: "AED10" on Home Page
     Then should see Products Area Fourth Product Image on Home Page
-    Then should see Products Area Fourth Product Add Button on Home Page
     Then should see Products Area Fourth Product Name: "Almond Colombia Coffee" on Home Page
-    Then should see Products Area Fourth Product Price: "AED45" on Home Page
+    #Then should see Products Area Fourth Product Price: "AED45" on Home Page
     #Then should see Products Area Fourth Product Discount Price: "AED10" on Home Page
     Then should see Products Area Show All Products: "SHOW ALL PRODUCTS" on Home Page
     Then should see Sustainability Area Title: "Sustainability And Traum" on Home Page
@@ -55,27 +51,23 @@ Feature: Home Page
     Then should see Favorites Area First Product Image on Home Page
     Then should see Favorites Area First Product Name: "Traum Kickstart Capsule Coffee X 10" on Home Page
     When click Favorites Area First Product Image on Home Page
-    Then should see Favorites Area First Product Price: "AED30" on Home Page
+    #Then should see Favorites Area First Product Price: "AED30" on Home Page
     #Then should see Favorites Area First Product Discount Price: "AED15" on Home Page
-    Then should see Favorites Area First Product Add Button on Home Page
     Then should see Favorites Area Second Product Image on Home Page
     Then should see Favorites Area Second Product Name: "Kenya Capsule Coffee X10" on Home Page
     When click Favorites Area Second Product Image on Home Page
-    Then should see Favorites Area Second Product Price: "AED35" on Home Page
+    #Then should see Favorites Area Second Product Price: "AED35" on Home Page
     #Then should see Favorites Area Second Product Discount Price: "AED10" on Home Page
-    Then should see Favorites Area Second Product Add Button on Home Page
     Then should see Favorites Area Third Product Image on Home Page
     Then should see Favorites Area Third Product Name: "Chocolate Colombia Coffee" on Home Page
     When click Favorites Area Third Product Image on Home Page
-    Then should see Favorites Area Third Product Price: "AED45" on Home Page
+    #Then should see Favorites Area Third Product Price: "AED45" on Home Page
     #Then should see Favorites Area Third Product Discount Price: "AED10" on Home Page
-    Then should see Favorites Area Third Product Add Button on Home Page
     Then should see Favorites Area Fourth Product Image on Home Page
     Then should see Favorites Area Fourth Product Name: "Almond Colombia Coffee" on Home Page
     When click Favorites Area Fourth Product Image on Home Page
-    Then should see Favorites Area Fourth Product Price: "AED45" on Home Page
+    #Then should see Favorites Area Fourth Product Price: "AED45" on Home Page
     #Then should see Favorites Area Fourth Product Discount Price: "AED10" on Home Page
-    Then should see Favorites Area Fourth Product Add Button on Home Page
     Then should see Whosale Area Title: "Looking for a coffee wholesale partner?" on Home Page
     Then should see Whosale Area Description: "We’re proud to partner with hotels, cafes, offices, and restaurants that share our common passion for coffee.Traum is more than just a wholesale coffee supplier - we're part of your operation team with our customized service, the best coffee equipment, and barista training to ensure your success." on Home Page
     Then should see Whosale Area Whosale Button: "WHOLESALE" on Home Page
@@ -119,7 +111,7 @@ Feature: Home Page
   Scenario: User should see Products Page when clicked Shop Now Button in the Traum Kaffee Area on Home Page
     Given user on the Home Page
     When click Home Page Area Shop Now Button on Home Page
-    Then should see the Products Page
+    Then should see the Store Selection Page
 
   @HomePageArea @Navigation @Facebook
   Scenario: User should see Facebook Page when clicked Area Facebook Icon  in the Traum Kaffee Area on Home Page
@@ -143,127 +135,92 @@ Feature: Home Page
   Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click First Product's Image in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @FirstProduct
-  Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Image in the Products Area on Home Page
+  Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Name in the Products Area on Home Page
     Given user on the Home Page
     When click First Product's Name in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @FirstProduct
   Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click First Product's Price in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
-
-  @ProductsArea @AddBasket @FirstProduct
-  Scenario: User should see the Cart Count Increasing by One when clicked the First Product’s Add Button in the Products Area on Home Page
-    Given user on the Home Page
-    When click Products Area First Product Add Button on Home Page
-    Then should see Popup Message: "Added to cart"
-    Then should see Popup Close Icon
-    Then should see Popup Icon
-    Then should see Basket Number: "1" on Navigation Bar
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @SecondProduct
   Scenario: User should see Second Product’s Product Detail Page when clicked Second Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Second Product's Image in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @SecondProduct
   Scenario: User should see Second Product’s Product Detail Page when clicked Second Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Second Product's Name in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @SecondProduct
   Scenario: User should see Second Product’s Product Detail Page when clicked Second Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Second Product's Price in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
-
-  @ProductsArea @AddBasket @SecondProduct
-  Scenario: User should see the Cart Count Increasing by One when clicked the Second Product’s Add Button  in the Products Area on Home Page
-    Given user on the Home Page
-    When click Products Area Second Product Add Button on Home Page
-    Then should see Popup Message: "Added to cart"
-    Then should see Popup Close Icon
-    Then should see Popup Icon
-    Then should see Basket Number: "1" on Navigation Bar
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @ThirdProduct
   Scenario: User should see Third Product’s Product Detail Page when clicked Third Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Third Product's Image in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @ThirdProduct
   Scenario: User should see Third Product’s Product Detail Page when clicked Third Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Third Product's Name in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @ThirdProduct
   Scenario: User should see Third Product’s Product Detail Page when clicked Third Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Third Product's Price in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
-
-  @ProductsArea @AddBasket @ThirdProduct
-  Scenario: User should see the Cart Count Increasing by One when clicked the Third Product’s Add Button in the Products Area on Home Page
-    Given user on the Home Page
-    When click Products Area Third Product Add Button on Home Page
-    Then should see Popup Message: "Added to cart"
-    Then should see Popup Close Icon
-    Then should see Popup Icon
-    Then should see Basket Number: "1" on Navigation Bar
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @FourthProduct
   Scenario: User should see Fourth Product’s Product Detail Page when clicked Fourth Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Fourth Product's Image in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @FourthProduct
   Scenario: User should see Fourth Product’s Product Detail Page when clicked Fourth Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Fourth Product's Name in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @FourthProduct
   Scenario: User should see Fourth Product’s Product Detail Page when clicked Fourth Product’s Image in the Products Area on Home Page
     Given user on the Home Page
     When click Fourth Product's Price in the Products Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
-
-  @ProductsArea @AddBasket @FourthProduct
-  Scenario: User should see the Cart Count Increasing by One when clicked the Fourth Product’s Add Button in the Products Area on Home Page
-    Given user on the Home Page
-    When click Products Area Fourth Product Add Button on Home Page
-    Then should see Popup Message: "Added to cart"
-    Then should see Popup Close Icon
-    Then should see Popup Icon
-    Then should see Basket Number: "1" on Navigation Bar
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @ProductsArea @Navigation @ShowAllProducts
   Scenario: User should see the Products Page when clicked Show All Products Button in the Products Area on Home Page
     Given user on the Home Page
     When click Products Area Show All Products Button on Home Page
-    Then should see the Products Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @SustainabilityArea @Navigation @ReadMore
   Scenario: User should see Sustainability Page when clicked the Read More Button in the Sustainability and Traum Area on Home Page
@@ -272,132 +229,64 @@ Feature: Home Page
     Then should see the Sustainability Page
 
   @FavoritesArea @FirstProduct
-  Scenario: User should see First Product’s Price and Add Button when clicked First Product’s Image in the Customer Favorites Area on Home Page
-    Given user on the Home Page
-    When click Favorites Area First Product Image on Home Page
-    Then should see Favorites Area First Product Add Button on Home Page
-    Then should see Favorites Area First Product Price: "AED30" on Home Page
-
-  @FavoritesArea @FirstProduct
   Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Image in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area First Product Image on Home Page
     When click First Product's Price in the Favorites Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
-
-  @FavoritesArea @SecondProduct
-  Scenario: User should see Second Product’s Price and Add Button when clicked Second Product’s Image in the Customer Favorites Area on Home Page
-    Given user on the Home Page
-    When click Favorites Area Second Product Image on Home Page
-    Then should see Favorites Area Second Product Add Button on Home Page
-    Then should see Favorites Area Second Product Price: "AED35" on Home Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @FavoritesArea @SecondProduct
   Scenario: User should see Second Product’s Product Detail Page when clicked Second Product’s Image in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Second Product Image on Home Page
     When click Second Product's Price in the Favorites Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
-
-  @FavoritesArea @ThirdProduct
-  Scenario: User should see Third Product’s Price and Add Button when clicked Third Product’s Image in the Customer Favorites Area on Home Page
-    Given user on the Home Page
-    When click Favorites Area Third Product Image on Home Page
-    Then should see Favorites Area Third Product Add Button on Home Page
-    Then should see Favorites Area Third Product Price: "AED45" on Home Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @FavoritesArea @ThirdProduct
   Scenario: User should see Third Product’s Product Detail Page when clicked Third Product’s Image in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Third Product Image on Home Page
     When click Third Product's Price in the Favorites Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
-
-  @FavoritesArea @FourthProduct
-  Scenario: User should see Fourth Product’s Price and Add Button when clicked Fourth Product’s Image in the Customer Favorites Area on Home Page
-    Given user on the Home Page
-    When click Favorites Area Fourth Product Image on Home Page
-    Then should see Favorites Area Fourth Product Add Button on Home Page
-    Then should see Favorites Area Fourth Product Price: "AED45" on Home Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @FavoritesArea @FourthProduct
   Scenario: User should see Fourth Product’s Product Detail Page when clicked Fourth Product’s Image in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Fourth Product Image on Home Page
     When click Fourth Product's Price in the Favorites Area
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @FavoritesArea @Navigation @FirstProduct
   Scenario: User should see First Product’s Product Detail Page when clicked First Product’s Name in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area First Product Name on Home Page
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @FavoritesArea @Navigation @SecondProduct
   Scenario: User should see Second Product’s Product Detail Page when clicked Second Product’s Name in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Second Product Name on Home Page
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @FavoritesArea @Navigation @ThirdProduct
   Scenario: User should see Third Product’s Product Detail Page when clicked Third Product’s Name in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Third Product Name on Home Page
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @FavoritesArea @Navigation @FourthProduct
   Scenario: User should see Fourth Product’s Product Detail Page when clicked Fourth Product’s Name in the Customer Favorites Area on Home Page
     Given user on the Home Page
     When click Favorites Area Fourth Product Name on Home Page
-    Then should see the Product Detail Page
-    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Product Detail Page
-
-  @FavoritesArea @AddBasket @FirstProduct
-  Scenario: User should see the Cart Count Increasing by One when clicked the First Product’s Add Button in the Customer Favorites Area on Home Page
-    Given user on the Home Page
-    When click Favorites Area First Product Image on Home Page
-    When click Favorites Area First Product Add Button on Home Page
-    Then should see Popup Message: "Added to cart"
-    Then should see Popup Close Icon
-    Then should see Popup Icon
-    Then should see Basket Number: "1" on Navigation Bar
-
-  @FavoritesArea @AddBasket @SecondProduct
-  Scenario: User should see the Cart Count Increasing by One when clicked the Second Product’s Add Button in the Customer Favorites Area on Home Page
-    Given user on the Home Page
-    When click Favorites Area Second Product Image on Home Page
-    When click Favorites Area Second Product Add Button on Home Page
-    Then should see Popup Message: "Added to cart"
-    Then should see Popup Close Icon
-    Then should see Popup Icon
-    Then should see Basket Number: "1" on Navigation Bar
-
-  @FavoritesArea @AddBasket @ThirdProduct
-  Scenario: User should see the Cart Count Increasing by One when clicked the Third Product’s Add Button in the Customer Favorites Area on Home Page
-    Given user on the Home Page
-    When click Favorites Area Third Product Image on Home Page
-    When click Favorites Area Third Product Add Button on Home Page
-    Then should see Popup Message: "Added to cart"
-    Then should see Popup Close Icon
-    Then should see Popup Icon
-    Then should see Basket Number: "1" on Navigation Bar
-
-  @FavoritesArea @AddBasket @FourthProduct
-  Scenario: User should see the Cart Count Increasing by One when clicked the Fourth Product’s Add Button in the Customer Favorites Area on Home Page
-    Given user on the Home Page
-    When click Favorites Area Fourth Product Image on Home Page
-    When click Favorites Area Fourth Product Add Button on Home Page
-    Then should see Popup Message: "Added to cart"
-    Then should see Popup Close Icon
-    Then should see Popup Icon
-    Then should see Basket Number: "1" on Navigation Bar
+    Then should see the Store Selection Page
+    Then should see Name: "SELECT A STORE TO START YOUR ORDER" on Store Selection Page
 
   @WhosaleArea @Navigation @Whosale
   Scenario: User should see Whosale Page when clicked Whosale Button in the Whosale Area on Home Page

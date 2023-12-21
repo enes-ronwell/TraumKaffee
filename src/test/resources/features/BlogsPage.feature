@@ -36,3 +36,4 @@ Feature: Blogs Page
     Given user on the Blogs Page
     When click Our Blog Area First Blog on Blogs Page
     Then should see the Blog Detail Page
+

@@ -121,7 +121,7 @@ public class HomePage {
     private final By TestimonalsAreaThirdTestimonalPerson = By.cssSelector(".swiper-wrapper>div:nth-child(3) span.text-base");
     private final By TestimonalsAreaLeftIcon = By.cssSelector("#mySwiper>button:nth-child(2)>svg");
     private final By TestimonalsAreaRightIcon = By.cssSelector("#mySwiper>button:nth-child(3)>svg");
-
+    private final By StoreSelectionPageTitle = By.cssSelector(".pt-8.pb-4 h2");
 
     public HomePage(WebDriver driver) {
         elementHelper = new ElementHelper(driver);
@@ -561,9 +561,6 @@ public class HomePage {
         return elementHelper.getText(FavoritesAreaFirstProductPrice);
     }
 
-    public void checkFavoritesAreaFirstProductAddButton() {
-        elementHelper.checkElement(FavoritesAreaFirstProductAddButton);
-    }
 
     public void checkFavoritesAreaSecondProductImage() {
         elementHelper.checkElement(FavoritesAreaSecondProductImage);
@@ -577,9 +574,7 @@ public class HomePage {
         return elementHelper.getText(FavoritesAreaSecondProductPrice);
     }
 
-    public void checkFavoritesAreaSecondProductAddButton() {
-        elementHelper.checkElement(FavoritesAreaSecondProductAddButton);
-    }
+
 
     public void checkFavoritesAreaThirdProductImage() {
         elementHelper.checkElement(FavoritesAreaSecondProductImage);
@@ -593,10 +588,6 @@ public class HomePage {
         return elementHelper.getText(FavoritesAreaThirdProductPrice);
     }
 
-    public void checkFavoritesAreaThirdProductAddButton() {
-        elementHelper.checkElement(FavoritesAreaThirdProductAddButton);
-    }
-
     public void checkFavoritesAreaFourthProductImage() {
         elementHelper.checkElement(FavoritesAreaFourthProductImage);
     }
@@ -607,10 +598,6 @@ public class HomePage {
 
     public String checkFavoritesAreaFourthProductPrice() {
         return elementHelper.getText(FavoritesAreaFourthProductPrice);
-    }
-
-    public void checkFavoritesAreaFourthProductAddButton() {
-        elementHelper.checkElement(FavoritesAreaFourthProductAddButton);
     }
 
     public String checkTestimonalsAreaTitle() {
@@ -741,6 +728,13 @@ public class HomePage {
         elementHelper.click(FavoritesAreaFirstProductPrice);
     }
 
+    public void checkStoreSelectionPage() {
+        elementHelper.checkUrl("https://dev.traumkaffee.com/product");
+    }
+
+    public String checkTitleOnStoreSelectionPage(){
+        return elementHelper.getText(StoreSelectionPageTitle);
+    }
 }
 
 

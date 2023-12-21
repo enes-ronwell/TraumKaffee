@@ -55,7 +55,7 @@ public class AccountDetailsPageDefinitions {
 
     @When("clear Account Details Area First Name on Account Details Page")
     public void clearAccountDetailsAreaFirstNameOnAccountDetailsPage() {
-        accountDetailsPage.sendkeysAccountDetailsAreaFirstName("");
+        accountDetailsPage.clearAccountDetailsAreaFirstName();
     }
 
     @When("clear Account Details Area Last Name on Account Details Page")
@@ -115,6 +115,8 @@ public class AccountDetailsPageDefinitions {
     }
 
 
-
-
+    @When("user click First Name Text Box on Account Details Page")
+    public void userClickFirstNameTextBoxOnAccountDetailsPage() {
+        accountDetailsPage.userClickFirstNameTextBoxOnAccountDetailsPage();
+    }
 }

@@ -165,7 +165,7 @@ Feature: Navigation Bar
   Scenario: NavBar Area Shopping Cart  Navigation Control
     Given user on the Home Page
     When click NavBar Area Shopping Cart on Navigation Bar
-    Then should see the Shopping Cart Page
+    Then should see the Store Selection Page
 
   @NavBarArea @Navigation @MyAccount
   Scenario: NavBar Area My Account  Navigation Control

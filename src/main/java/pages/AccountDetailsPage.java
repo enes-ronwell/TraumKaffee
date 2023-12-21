@@ -95,4 +95,7 @@ public class AccountDetailsPage {
     }
 
 
+    public void userClickFirstNameTextBoxOnAccountDetailsPage() {
+        elementHelper.click(AccountDetailsAreaFirstNameTextBox);
+    }
 }

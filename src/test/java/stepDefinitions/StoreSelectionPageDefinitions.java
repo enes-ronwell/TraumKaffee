@@ -60,4 +60,31 @@ public class StoreSelectionPageDefinitions {
         String secondStoresAddress = storeSelectionPage.shouldSeeTheSecondStoresAddressOnTheShopPage();
         Assert.assertEquals(secondStoresAddress, address);
     }
+
+    @Then("should see Place Icon on Store Selection Page")
+    public void shouldSeePlaceIconOnStoreSelectionPage() {
+        storeSelectionPage.shouldSeePlaceIconOnMap();
+    }
+
+    @Then("should see the Zoom In Button on Store Selection Page")
+    public void shouldSeeTheZoomInButtonOnStoreSelectionPage() {
+        storeSelectionPage.shouldSeeTheZoomInButton();
+    }
+
+    @Then("should see the Zoom Out Button on Store Selection Page")
+    public void shouldSeeTheZoomOutButtonOnStoreSelectionPage() {
+        storeSelectionPage.shouldSeeTheZoomOutButton();
+    }
+
+    @Then("should see the First Stores Address: {string} on Store Selection Page")
+    public void shouldSeeTheFirstStoresAddressOnStoreSelectionPage(String address) {
+        String firstAddress = storeSelectionPage.shouldSeeTheFirstStoresAddress();
+        Assert.assertEquals(firstAddress, address);
+    }
+
+    @Then("should see the Second Stores Address: {string} on Store Selection Page")
+    public void shouldSeeTheSecondStoresAddressOnStoreSelectionPage(String address) {
+        String secondAddress = storeSelectionPage.shouldSeeTheSecondStoresAddress();
+        Assert.assertEquals(secondAddress, address);
+    }
 }
