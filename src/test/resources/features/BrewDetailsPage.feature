@@ -61,4 +61,4 @@ Feature: Brew Details Page
   Scenario: Brew Your Dream Area Navigation Control
     Given user on the Brew Details Page
     When click Brew Your Dream Area Shop Our Coffee Button on Brew Details Page
-    Then should see the Products Page
+    Then should see the Store Selection Page

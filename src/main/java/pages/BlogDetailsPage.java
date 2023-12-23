@@ -12,7 +12,7 @@ public class BlogDetailsPage {
         elementHelper = new ElementHelper(driver);
     }
 
-    private String url = "https://dev.traumkaffee.com/blog/americano-vs-filter-coffee";
+    private String url = "https://dev.traumkaffee.com/blog/what-is-drip-coffee";
 
 
     public void userOnTheBlogDetailPage(){

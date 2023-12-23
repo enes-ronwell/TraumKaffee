@@ -13,7 +13,7 @@ Feature: Sign In Page
     Then should see Remember Me Checkbox on Sign In Page
     Then should see I have forgotten my password: "I have forgotten my password" on Sign In Page
     Then should see SignIn Button: "SIGN IN" on Sign In Page
-    Then should see Or Sign Up: "Or sign up" on Sign In Page
+    Then should see Or Sign Up: "Or" on Sign In Page
     Then should see Create an account: "Create an Account" on Sign In Page
     Then should see Sign Up: "Sign Up" on Sign In Page
 
@@ -85,17 +85,6 @@ Feature: Sign In Page
     Given successfully Sign In with Mail:"otomasyonmail@ronwell.net" and Password:"Otomasyon.12" on Sign In Page
     Then should see the Home Page
 
-  @Successfull @Navigate @Products
-  Scenario: Successfull SignIn Products Page Navigate Control
-    Given user on the Products Page
-    Given successfully Sign In with Mail:"otomasyonmail@ronwell.net" and Password:"Otomasyon.12" on Sign In Page
-    Then should see the Home Page
-
-  @Successfull @Navigate @ProductDetail
-  Scenario: Successfull SignIn Product Detail Page Navigate Control
-    Given user on the Product Detail Page
-    Given successfully Sign In with Mail:"otomasyonmail@ronwell.net" and Password:"Otomasyon.12" on Sign In Page
-    Then should see the Home Page
 
   @Successfull @Navigate @About
   Scenario: Successfull SignIn About Page Navigate Control
@@ -346,13 +335,7 @@ Feature: Sign In Page
     When taps navigate back
     Then should see the Home Page
 
-  @Successfull @NavigateBack @ShoppingCart
-  Scenario: Successfull SignIn Shopping Cart Page Navigate Control
-    Given user on the Shopping Cart Page
-    Given successfully Sign In with Mail:"otomasyonmail@ronwell.net" and Password:"Otomasyon.12" on Sign In Page
-    Then should see the Home Page
-    When taps navigate back
-    Then should see the Home Page
+
 
   @Successfull @NavigateBack @FAQ
   Scenario: Successfull SignIn FAQ Page Navigate Control
