@@ -27,19 +27,19 @@ Feature: Home Page
     Then should see Dream Area Explanation: "Our premium coffee is defined by the final moment when the naturalness of the field meets the divine taste. With its ethically sourced, freshly roasted beans and carefully selected flavor profile, Traum Kaffee is the ultimate way to experience the perfect cup of coffee.At Traum, sustainability is at the heart of everything we do. So you can enjoy the perfect cup of coffee without compromising the planet.Enjoy a cup of Traum Kaffee and start living your dreams today!" on Home Page
     Then should see Products Area Title: "Products" on Home Page
     Then should see Products Area First Product Image on Home Page
-    Then should see Products Area First Product Name: "Traum Kickstart Capsule Coffee X 10" on Home Page
+    Then should see Products Area First Product Name: "Traum Kickstart Capsule Coffee X 10 (14:27:14)" on Home Page
     #Then should see Products Area First Product Price: "AED30" on Home Page
     #Then should see Products Area First Product Discount Price: "AED11" on Home Page
     Then should see Products Area Second Product Image on Home Page
-    Then should see Products Area Second Product Name: "Kenya Capsule Coffee X10" on Home Page
+    Then should see Products Area Second Product Name: "Traum Kickstart Capsule Coffee X 10" on Home Page
     #Then should see Products Area Second Product Price: "AED35" on Home Page
     #Then should see Products Area Second Product Discount Price: "AED10" on Home Page
     Then should see Products Area Third Product Image on Home Page
-    Then should see Products Area Third Product Name: "Chocolate Colombia Coffee" on Home Page
+    Then should see Products Area Third Product Name: "Kenya Capsule Coffee X10" on Home Page
     #Then should see Products Area Third Product Price: "AED45" on Home Page
    # Then should see Products Area Third Product Discount Price: "AED10" on Home Page
     Then should see Products Area Fourth Product Image on Home Page
-    Then should see Products Area Fourth Product Name: "Almond Colombia Coffee" on Home Page
+    Then should see Products Area Fourth Product Name: "Chocolate Colombia Coffee" on Home Page
     #Then should see Products Area Fourth Product Price: "AED45" on Home Page
     #Then should see Products Area Fourth Product Discount Price: "AED10" on Home Page
     Then should see Products Area Show All Products: "SHOW ALL PRODUCTS" on Home Page
@@ -49,22 +49,22 @@ Feature: Home Page
     Then should see Sustainability Area Image on Home Page
     Then should see Favorites Area Title: "CUSTOMER FAVORITES" on Home Page
     Then should see Favorites Area First Product Image on Home Page
-    Then should see Favorites Area First Product Name: "Traum Kickstart Capsule Coffee X 10" on Home Page
+    Then should see Favorites Area First Product Name: "Traum Kickstart Capsule Coffee X 10 (14:27:14)" on Home Page
     When click Favorites Area First Product Image on Home Page
     #Then should see Favorites Area First Product Price: "AED30" on Home Page
     #Then should see Favorites Area First Product Discount Price: "AED15" on Home Page
     Then should see Favorites Area Second Product Image on Home Page
-    Then should see Favorites Area Second Product Name: "Kenya Capsule Coffee X10" on Home Page
+    Then should see Favorites Area Second Product Name: "Traum Kickstart Capsule Coffee X 10" on Home Page
     When click Favorites Area Second Product Image on Home Page
     #Then should see Favorites Area Second Product Price: "AED35" on Home Page
     #Then should see Favorites Area Second Product Discount Price: "AED10" on Home Page
     Then should see Favorites Area Third Product Image on Home Page
-    Then should see Favorites Area Third Product Name: "Chocolate Colombia Coffee" on Home Page
+    Then should see Favorites Area Third Product Name: "Kenya Capsule Coffee X10" on Home Page
     When click Favorites Area Third Product Image on Home Page
     #Then should see Favorites Area Third Product Price: "AED45" on Home Page
     #Then should see Favorites Area Third Product Discount Price: "AED10" on Home Page
     Then should see Favorites Area Fourth Product Image on Home Page
-    Then should see Favorites Area Fourth Product Name: "Almond Colombia Coffee" on Home Page
+    Then should see Favorites Area Fourth Product Name: "Chocolate Colombia Coffee" on Home Page
     When click Favorites Area Fourth Product Image on Home Page
     #Then should see Favorites Area Fourth Product Price: "AED45" on Home Page
     #Then should see Favorites Area Fourth Product Discount Price: "AED10" on Home Page
