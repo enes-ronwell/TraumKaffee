@@ -85,7 +85,7 @@ public class HomePage {
     private final By ProductsAreaThirdProductName = By.cssSelector(".grid.grid-cols-2.gap-8>div:nth-child(3)>div>div>p");
     private final By ProductsAreaThirdProductPrice = By.cssSelector(".grid.grid-cols-2.gap-8>div:nth-child(3)>div>div div.flex.flex-row.gap-1>p");
     private final By ProductsAreaThirdProductDiscountPrice = By.cssSelector(".gap-8.grid > div:nth-of-type(3) p:nth-of-type(2)");
-    private final By ProductsAreaFourthProductImage = By.cssSelector(".w-full[alt='Almond Colombia Coffee']");
+    private final By ProductsAreaFourthProductImage = By.cssSelector(".gap-8.mb-4>div:nth-child(4) img");
     private final By ProductsAreaFourthProductAddButton = By.cssSelector(".gap-8.grid > div:nth-of-type(4) circle:nth-of-type(1)");
     private final By ProductsAreaFourthProductPrice = By.cssSelector(".grid.grid-cols-2.gap-8>div:nth-child(4)>div>div div.flex.flex-row.gap-1>p");
     private final By ProductsAreaFourthProductDiscountPrice = By.cssSelector(".gap-8.grid > div:nth-of-type(4) p:nth-of-type(2)");

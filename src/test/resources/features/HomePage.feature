@@ -1,4 +1,4 @@
-@HomePage @Go
+@HomePage
 Feature: Home Page
 
   @TextAndComponent

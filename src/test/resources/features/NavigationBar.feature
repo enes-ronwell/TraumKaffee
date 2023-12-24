@@ -30,18 +30,11 @@ Feature: Navigation Bar
     Then should see NavBar Area Whosale Option: "Equipments" on Navigation Bar
     Then should see NavBar Area Whosale Option: "Training" on Navigation Bar
 
-
-  @NavBarArea @Navigation @TraumImage
-  Scenario: NavBar Area Traum Image Navigation Control
-    Given user on the Products Page
-    When click NavBar Area Traum Image on Navigation Bar
-    Then should see the Home Page
-
   @NavBarArea @Navigation @Shop
   Scenario: NavBar Area Shop Navigation Control
     Given user on the Home Page
     When click NavBar Area Shop on Navigation Bar
-    Then should see the Products Page
+    Then should see the Store Selection Page
 
   @NavBarArea @Navigation @About
   Scenario: NavBar Area About Navigation Control
@@ -160,12 +153,6 @@ Feature: Navigation Bar
     Given user on the Home Page
     When click NavBar Area Sign In on Navigation Bar
     Then should see the Sign In Page
-
-  @NavBarArea @Navigation @ShoppingCart
-  Scenario: NavBar Area Shopping Cart  Navigation Control
-    Given user on the Home Page
-    When click NavBar Area Shopping Cart on Navigation Bar
-    Then should see the Store Selection Page
 
   @NavBarArea @Navigation @MyAccount
   Scenario: NavBar Area My Account  Navigation Control

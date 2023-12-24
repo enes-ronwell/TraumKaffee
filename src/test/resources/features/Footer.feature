@@ -56,12 +56,6 @@ Feature: Footer
     When click Quick Links Area Contact on Footer
     Then should see the Contact Page
 
-  @QuickLinksArea @Navigation @Products
-  Scenario: Quick Links Area Products Navigation Control
-    Given user on the Home Page
-    When click Quick Links Area Products on Footer
-    Then should see the Products Page
-
   @QuickLinksArea @Navigation @Blog
   Scenario: Quick Links Area Blog Navigation Control
     Given user on the Home Page

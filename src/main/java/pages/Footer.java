@@ -14,8 +14,8 @@ public class Footer {
 
     private By TraumKaffeeAreaImage = By.cssSelector("#footer>div>div>div>img");
     private By QuickLinksAreaMyAccount = By.cssSelector("#footer>div>div>div:nth-child(2) div:nth-child(2)>ul button");
-    private By QuickLinksAreaFAQ = By.cssSelector("#footer>div>div>div:nth-child(2) div:nth-child(2)>ul>li:nth-child(2)");
-    private By QuickLinksAreaBecomeOurPartner = By.cssSelector("#footer>div>div>div:nth-child(2) div:nth-child(2)>ul>li:nth-child(3)");
+    private By QuickLinksAreaFAQ = By.cssSelector("#footer>div>div>div:nth-child(2)>div:nth-child(2)>ul>li:nth-child(2)");
+    private By QuickLinksAreaBecomeOurPartner = By.cssSelector("#footer>div>div>div:nth-child(2)>div:nth-child(2)>ul>li:nth-child(3)");
     private By QuickLinksAreaContact = By.cssSelector("#footer>div>div>div:nth-child(2)>div>div>ul>li:nth-child(1)");
     private By QuickLinksAreaProducts = By.cssSelector("#footer>div>div>div:nth-child(2)>div>div>ul>li:nth-child(2)");
     private By QuickLinksAreaBlog = By.cssSelector("#footer>div>div>div:nth-child(2)>div>div>ul>li:nth-child(3)");
@@ -25,13 +25,13 @@ public class Footer {
     private By LetsStayInTouchAreaFacebookIcon = By.cssSelector("#footer>div>div>div:nth-child(4)>div:nth-child(3)>div:nth-child(1)>button");
     private By LetsStayInTouchAreaInstagramIcon = By.cssSelector("#footer>div>div>div:nth-child(4)>div:nth-child(3)>div:nth-child(2)>button");
     private By LetsStayInTouchAreaTwitterIcon = By.cssSelector("#footer>div>div>div:nth-child(4)>div:nth-child(3)>div:nth-child(3)>button");
-    private By LetsStayInTouchAreaEmailBoxIcon = By.cssSelector("#footer>div>div>div:nth-child(4)>div:nth-child(2) button");
+    private By LetsStayInTouchAreaEmailBoxIcon = By.cssSelector("#footer>div>div>div:nth-child(4)>div:nth-child(2) svg");
     private By LetsStayInTouchAreaEmailBox = By.cssSelector("#footer>div>div>div:nth-child(4)>div:nth-child(2)>input");
     private By TraumKaffeeAreaTitle = By.cssSelector("#footer>div>span>span");
     private By TraumKaffeeAreaAllRightsReserved = By.cssSelector("#footer .mb-4.mt-8:nth-child(2)");
     private By QuickLinksAreaTitle = By.cssSelector("#footer>div>div>div:nth-child(2) h3");
     private By LegalsAreaTitle = By.cssSelector("#footer>div>div>div:nth-child(3) h3");
-    private By LetsStayInTouchAreaTitle = By.cssSelector("#footer>div>div>div:nth-child(4)>div:nth-child(1)");
+    private By LetsStayInTouchAreaTitle = By.cssSelector("#footer>div>div>div:nth-child(4)>div:nth-child(1) span");
 
 
     public void clickTraumKaffeeAreaImage() {
