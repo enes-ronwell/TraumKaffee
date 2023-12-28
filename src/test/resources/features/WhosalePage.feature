@@ -81,7 +81,6 @@ Feature: Whosale Page
     Then should see Lets Grab a Coffee Area Tell us: "Tell us a bit about your business... the more info the better!" on Whosale Page
     Then should see Lets Grab a Coffee Area Send Button: "SEND" on Whosale Page
 
-
   @DiscoverArea @Navigation @CafesAndCoffeeShops
   Scenario: User should see the Cafes and Coffee Shops Page when clicked the Cafes and Coffee Shops Discover Text in the Discover Area on Whosale Page
     Given user on the Whosale Page

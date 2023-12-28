@@ -53,7 +53,6 @@ Feature: Shop2Page2
     Then user should see Burundi Drip Coffee Image on ShopTwo PageTwo
     Then user should see El Salvador Apaneca Drip Coffee Image on ShopTwo PageTwo
 
-
   Scenario: Whole Bean Coffees Button Control
     Given user on the ShopTwo PageTwo
     When user click Whole Bean Coffees on ShopTwo PageTwo

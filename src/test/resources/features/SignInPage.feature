@@ -335,8 +335,6 @@ Feature: Sign In Page
     When taps navigate back
     Then should see the Home Page
 
-
-
   @Successfull @NavigateBack @FAQ
   Scenario: Successfull SignIn FAQ Page Navigate Control
     Given user on the FAQ Page
@@ -368,3 +366,4 @@ Feature: Sign In Page
     Then should see the Home Page
     When taps navigate back
     Then should see the Home Page
+
