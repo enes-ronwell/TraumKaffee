@@ -5,12 +5,12 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        tags = "@memisi",
+        tags = "@HomePage",
         features = "src/test/resources/features",
         glue = {"stepDefinitions", "utils"},
         plugin = {
                 "summary",
-                "html:target/cucumber-reports.html"
+                "html:target/cucumber-reports"
         },
         monochrome = true
 )
