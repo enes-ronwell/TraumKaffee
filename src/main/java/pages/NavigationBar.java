@@ -38,6 +38,7 @@ public class NavigationBar {
     private By NavBarAreaShoppingCart = By.cssSelector(".mr-0>div:nth-child(2) svg");
     private By NavBarAreaMyAccount = By.cssSelector(".mr-0>div:nth-child(1) button");
     private By NavBarAreaShoppingCartCount = By.cssSelector(".mr-0>div:nth-child(2)>span span");
+    private By NavBarCoffeeAcademyButton = By.cssSelector(".ml-8.gap-8>div:nth-child(6) button");
 
     public String shouldSeeBasketNumber() {
         return elementHelper.getText(BasketNumber);
@@ -192,5 +193,7 @@ public class NavigationBar {
         elementHelper.overElement(NavBarAreaAbout);
     }
 
-
+    public void clickCoffeeAcademyButton(){
+        elementHelper.click(NavBarCoffeeAcademyButton);
+    }
 }

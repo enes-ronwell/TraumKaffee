@@ -148,6 +148,12 @@ Feature: Navigation Bar
     When click NavBar Area Become Our Partner on Navigation Bar
     Then should see the Become Our Partner Page
 
+  @NavBarArea @CoffeeAcademy @Navigation
+  Scenario: NavBar Area Coffee Academy Navigation Control
+    Given user on the Home Page
+    When click Navbar Area Coffee Academy on Navigation Bar
+    Then should see the Coffee Academy Page
+
   @NavBarArea @Navigation @SignIn
   Scenario: NavBar Area Sign In Navigation Control
     Given user on the Home Page
