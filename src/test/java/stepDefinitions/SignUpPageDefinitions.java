@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import com.beust.ah.A;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -200,5 +201,106 @@ public class SignUpPageDefinitions {
         String email = "testAutomation" + random + "@ronwell.net";
         SignUpPage.sendkeysEmail(email);
 
+    }
+
+    @When("click the Sign Up Business Account Button on Sign Up Page")
+    public void clickTheSignUpBusinessAccountButtonOnSignUpPage() {
+        SignUpPage.clickTheSignUpBusinessAccountButton();
+    }
+
+    @Then("should see the First Name Title: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheFirstNameTitleOnSıgnUpBusinessAccountPage(String title) {
+        String text = SignUpPage.shouldSeeTheFirstNameTitle();
+        Assert.assertEquals(title, text);
+    }
+
+    @Then("should see the First Name Textbox: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheFirstNameTextboxOnSıgnUpBusinessAccountPage(String textbox) {
+        String text = SignUpPage.shouldSeeTheFirstNameTextbox();
+        Assert.assertEquals(textbox, text);
+    }
+
+    @Then("should see the Last Name Title: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheLastNameTitleOnSıgnUpBusinessAccountPage(String title) {
+        String text = SignUpPage.shouldSeeTheLastNameTitle();
+        Assert.assertEquals(title, text);
+    }
+
+    @Then("should see the Last Name Textbox: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheLastNameTextboxOnSıgnUpBusinessAccountPage(String textbox) {
+        String text = SignUpPage.shouldSeeTheLastNameTextbox();
+        Assert.assertEquals(textbox, text);
+    }
+
+    @Then("should see the Business Email Title: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheBusinessEmailTitleOnSıgnUpBusinessAccountPage(String title) {
+        String text = SignUpPage.shouldSeeTheBusinessEmailTitle();
+        Assert.assertEquals(title, text);
+    }
+
+    @Then("should see the Business Email TextBox: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheBusinessEmailTextBoxOnSıgnUpBusinessAccountPage(String textbox) {
+        String text = SignUpPage.shouldSeeTheBusinessEmailTextBox();
+        Assert.assertEquals(textbox, text);
+    }
+
+    @Then("should see the Password Title: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeThePasswordTitleOnSıgnUpBusinessAccountPage(String title) {
+        String text = SignUpPage.shouldSeeThePasswordTitle();
+        Assert.assertEquals(title, text);
+    }
+
+    @Then("should see the Password Textbox: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeThePasswordTextboxOnSıgnUpBusinessAccountPage(String textbox) {
+        String text = SignUpPage.shouldSeeThePasswordTextbox();
+        Assert.assertEquals(textbox, text);
+    }
+
+    @Then("should see the Confirm Password Title: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheConfirmPasswordTitleOnSıgnUpBusinessAccountPage(String title) {
+        String text = SignUpPage.shouldSeeTheConfirmPasswordTitle();
+        Assert.assertEquals(title, text);
+    }
+
+    @Then("should see the Confirm Password Textbox: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheConfirmPasswordTextboxOnSıgnUpBusinessAccountPage(String textbox) {
+        String text = SignUpPage.shouldSeeTheConfirmPasswordTextbox();
+        Assert.assertEquals(textbox, text);
+    }
+
+    @Then("should see the Trade License Number Title: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheTradeLicenseNumberTitleOnSıgnUpBusinessAccountPage(String title) {
+        String text = SignUpPage.shouldSeeTheTradeLicenseNumberTitle();
+        Assert.assertEquals(title, text);
+    }
+
+    @Then("should see the Trade License Number Textbox: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheTradeLicenseNumberTextboxOnSıgnUpBusinessAccountPage(String textbox) {
+        String text = SignUpPage.shouldSeeTheTradeLicenseNumberTextbox();
+        Assert.assertEquals(textbox, text);
+    }
+
+    @Then("should see the Document Title: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheDocumentTitleOnSıgnUpBusinessAccountPage(String title) {
+        String text = SignUpPage.shouldSeeTheDocumentTitle();
+        Assert.assertEquals(title, text);
+    }
+
+    @Then("SHould see the Document Textbox: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheDocumentTextboxOnSıgnUpBusinessAccountPage(String textbox) {
+        String text = SignUpPage.shouldSeeTheDocumentTextbox();
+        Assert.assertEquals(textbox, text);
+    }
+
+    @Then("should see the Sign Up Button: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheSignUpButtonOnSıgnUpBusinessAccountPage(String button) {
+        String text = SignUpPage.shouldSeeTheSignUpButton();
+        Assert.assertEquals(button, text);
+    }
+
+    @Then("should see the Sıgn In Business Account Button: {string} on Sıgn Up Business Account Page")
+    public void shouldSeeTheSıgnInBusinessAccountButtonOnSıgnUpBusinessAccountPage(String button) {
+        String text = SignUpPage.shouldSeeTheSıgnInBusinessAccountButton();
+        Assert.assertEquals(button, text);
     }
 }

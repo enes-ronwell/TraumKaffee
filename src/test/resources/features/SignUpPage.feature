@@ -125,3 +125,23 @@ Feature: Sign Up Page
     When sendkeys Confirm Password: "123123Test" on Sign Up Page
     When click Sign Up Button on Sign Up Page
     Then should see the Sign In Page
+
+  @BusinessAccountSignUp
+  Scenario: Sign Up With Business Account Text And Component Control
+    Given user on the Sign Up Page
+    When click the Sign Up Business Account Button on Sign Up Page
+    Then should see the First Name Title: "First Name*" on Sıgn Up Business Account Page
+    Then should see the First Name Textbox: "First Name" on Sıgn Up Business Account Page
+    Then should see the Last Name Title: "Last Name*" on Sıgn Up Business Account Page
+    Then should see the Last Name Textbox: "Last Name" on Sıgn Up Business Account Page
+    Then should see the Business Email Title: "Business Email*" on Sıgn Up Business Account Page
+    Then should see the Business Email TextBox: "E-Mail Address" on Sıgn Up Business Account Page
+    Then should see the Password Title: "Password*" on Sıgn Up Business Account Page
+    Then should see the Password Textbox: "Password" on Sıgn Up Business Account Page
+    Then should see the Confirm Password Title: "Confirm Password*" on Sıgn Up Business Account Page
+    Then should see the Confirm Password Textbox: "Password" on Sıgn Up Business Account Page
+    Then should see the Trade License Number Title: "Trade License Number*" on Sıgn Up Business Account Page
+    Then should see the Trade License Number Textbox: "Trade License Number" on Sıgn Up Business Account Page
+    Then should see the Document Title: "Document*" on Sıgn Up Business Account Page
+    Then should see the Sign Up Button: "SIGN UP" on Sıgn Up Business Account Page
+    Then should see the Sıgn In Business Account Button: "Sign In Business Account" on Sıgn Up Business Account Page

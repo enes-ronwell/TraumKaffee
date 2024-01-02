@@ -27,8 +27,14 @@ public class SignInPage {
     private By PasswordEmptyMessage = By.cssSelector(".mt-2.font-sans.font-medium");
     private By EmailInvalidMessage = By.cssSelector("div.mb-4 h2.mt-2");
     private By PasswordInvalidMessage = By.cssSelector("div.mb-6 h2.mt-2");
-    private String url = "https://dev.traumkaffee.com/signin";
+    private By SignInBusinessAccountButton = By.cssSelector(".mt-4.mb-4>button:nth-child(3)");
+    private By BusinessEmailTitle = By.cssSelector(".pb-4.mb-0>div:nth-child(2)>label");
+    private By BusinessPasswordTitle = By.cssSelector(".pb-4.mb-0>div:nth-child(3)>label");
+    private By BusinessEmailTextbox = By.cssSelector(".pb-4.mb-0>div:nth-child(2)>div>input");
+    private By BusinessPasswordTextbox= By.cssSelector(".pb-4.mb-0>div:nth-child(3)>div>input");
+    private By SignUpBusinessAccountButton = By.cssSelector(".space-y-4.mb-8>button:nth-child(2)");
 
+    private String url = "https://dev.traumkaffee.com/signin";
 
     public void checkUrl(){
         elementHelper.checkUrl(url);
@@ -124,5 +130,27 @@ public class SignInPage {
         return elementHelper.getText(PasswordInvalidMessage);
     }
 
+    public void clickSignInBusinessAccountButton(){
+        elementHelper.click(SignInBusinessAccountButton);
+    }
 
+    public String shouldSeeBusinessEmailTitle(){
+        return elementHelper.getText(BusinessEmailTitle);
+    }
+
+    public String shouldSeeBusinessPasswordTitle(){
+        return elementHelper.getText(BusinessPasswordTitle);
+    }
+
+    public String shouldSeeBusinessEmailTextbox(){
+        return elementHelper.getAttribute(BusinessEmailTextbox, "placeholder");
+    }
+
+    public String shouldSeeBusinessPasswordTextbox(){
+        return elementHelper.getAttribute(BusinessPasswordTextbox, "placeholder");
+    }
+
+    public String shouldSeeSignUpBusinessAccountButton(){
+        return elementHelper.getText(SignUpBusinessAccountButton);
+    }
 }

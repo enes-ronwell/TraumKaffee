@@ -367,3 +367,16 @@ Feature: Sign In Page
     When taps navigate back
     Then should see the Home Page
 
+  @SignInWithBusinessAccount
+  Scenario: Sign In With Business Account Text And Component Control
+    Given user on the Sign In Page
+    When click Sign In Business Account Button on Sign In Page
+    Then should see the Business Email Title: "Business Email" on Sign In Business Account Page
+    Then should see the Password Title: "Password" on Sign In Business Account Page
+    Then should see the Business Email Textbox: "E-Mail Address" on Sign In Business Account Page
+    Then should see the Password Textbox: "Password" on Sign In Business Account Page
+    Then should see the Sign In Button: "SIGN IN" on Sign In Business Account Page
+    Then should see the Sign Up Business Account Button: "Sign Up Business Account" on Sign In Business Account Page
+
+
+

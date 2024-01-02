@@ -139,4 +139,44 @@ public class SignInPageDefinitions {
         SignInPage.checkUrl();
     }
 
+    @When("click Sign In Business Account Button on Sign In Page")
+    public void clickSignInBusinessAccountButtonOnSignInPage() {
+        SignInPage.clickSignInBusinessAccountButton();
+    }
+
+    @Then("should see the Business Email Title: {string} on Sign In Business Account Page")
+    public void shouldSeeTheBusinessEmailTitleOnSignInBusinessAccountPage(String email) {
+        String text = SignInPage.shouldSeeBusinessEmailTitle();
+        Assert.assertEquals(email, text);
+    }
+
+    @Then("should see the Password Title: {string} on Sign In Business Account Page")
+    public void shouldSeeThePasswordTitleOnSignInBusinessAccountPage(String password) {
+        String text = SignInPage.shouldSeeBusinessPasswordTitle();
+        Assert.assertEquals(password, text);
+    }
+
+    @Then("should see the Business Email Textbox: {string} on Sign In Business Account Page")
+    public void shouldSeeTheBusinessEmailTextboxOnSignInBusinessAccountPage(String email) {
+        String text = SignInPage.shouldSeeBusinessEmailTextbox();
+        Assert.assertEquals(text, email);
+    }
+
+    @Then("should see the Password Textbox: {string} on Sign In Business Account Page")
+    public void shouldSeeThePasswordTextboxOnSignInBusinessAccountPage(String password) {
+        String text = SignInPage.shouldSeeBusinessPasswordTextbox();
+        Assert.assertEquals(text, password);
+    }
+
+    @Then("should see the Sign In Button: {string} on Sign In Business Account Page")
+    public void shouldSeeTheSignInButtonOnSignInBusinessAccountPage(String button) {
+        String text = SignInPage.shouldSeeSignInButton();
+        Assert.assertEquals(text, button);
+    }
+
+    @Then("should see the Sign Up Business Account Button: {string} on Sign In Business Account Page")
+    public void shouldSeeTheSignUpBusinessAccountButtonOnSignInBusinessAccountPage(String button) {
+        String text = SignInPage.shouldSeeSignUpBusinessAccountButton();
+        Assert.assertEquals(button, text);
+    }
 }

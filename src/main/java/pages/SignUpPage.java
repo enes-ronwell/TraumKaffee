@@ -36,6 +36,22 @@ public class SignUpPage {
     private By invalidEmailMessage = By.cssSelector("#signUp>div:nth-child(2)>div>form>div:nth-child(3)>div h2");
     private By invalidPasswordMessage = By.cssSelector("#signUp>div:nth-child(2)>div>form>div:nth-child(4) h2");
     private By passwordsDoNotMatchMessage = By.cssSelector("#signUp>div:nth-child(2)>div>form>div:nth-child(5)> h2");
+    private By SignUpBusinessAccountButton = By.cssSelector(".mt-4.mb-4 button:nth-child(3)");
+    private By FirstNameTitle = By.cssSelector(".pt-4>div:nth-child(1)>div:nth-child(1)>label");
+    private By FirstNameTextbox = By.cssSelector(".pt-4>div:nth-child(1)>div:nth-child(1) input");
+    private By LastNameTitle = By.cssSelector(".pt-4>div:nth-child(1)>div:nth-child(2) label");
+    private By LastNameTextbox = By.cssSelector(".pt-4>div:nth-child(1)>div:nth-child(2) input");
+    private By BusinessEmailTitle = By.cssSelector(".pt-4>div:nth-child(2) label");
+    private By BusinessEmailTextBox = By.cssSelector(".pt-4>div:nth-child(2) input");
+    private By PasswordTitle = By.cssSelector(".pt-4>div:nth-child(3) label");
+    private By PasswordTextbox = By.cssSelector(".pt-4>div:nth-child(3) input");
+    private By ConfirmPasswordTitle = By.cssSelector(".pt-4>div:nth-child(4) label");
+    private By ConfirmPasswordTextbox = By.cssSelector(".pt-4>div:nth-child(4) input");
+    private By TradeLicenseNumberTitle = By.cssSelector(".pt-4>div:nth-child(5)>div:nth-child(1) label");
+    private By TradeLicenseNumberTextbox = By.cssSelector(".pt-4>div:nth-child(5)>div:nth-child(1) input");
+    private By DocumentTitle = By.cssSelector(".pt-4>div:nth-child(5)>div:nth-child(2) label");
+    private By DocumentTextbox = By.cssSelector(".pt-4>div:nth-child(5)>div:nth-child(2) span");
+    private By SıgnInBusinessAccountButton = By.cssSelector(".space-x-6>button:nth-child(2)");
 
     private String url = "https://dev.traumkaffee.com/signup";
 
@@ -167,7 +183,71 @@ public class SignUpPage {
         return elementHelper.getText(passwordsDoNotMatchMessage);
     }
 
-    public void shouldSeeSignInPage() {
+    public void clickTheSignUpBusinessAccountButton(){
+        elementHelper.click(SignUpBusinessAccountButton);
+    }
 
+    public String shouldSeeTheFirstNameTitle(){
+        return elementHelper.getText(FirstNameTitle);
+    }
+
+    public String shouldSeeTheFirstNameTextbox(){
+        return elementHelper.getAttribute(FirstNameTextbox, "placeholder");
+    }
+
+    public String shouldSeeTheLastNameTitle(){
+        return elementHelper.getText(LastNameTitle);
+    }
+
+    public String shouldSeeTheLastNameTextbox(){
+        return elementHelper.getAttribute(LastNameTextbox,"placeholder");
+    }
+
+    public String shouldSeeTheBusinessEmailTitle(){
+        return elementHelper.getText(BusinessEmailTitle);
+    }
+
+    public String shouldSeeTheBusinessEmailTextBox(){
+        return elementHelper.getAttribute(BusinessEmailTextBox, "placeholder");
+    }
+
+    public String shouldSeeThePasswordTitle(){
+        return elementHelper.getText(PasswordTitle);
+    }
+
+    public String shouldSeeThePasswordTextbox(){
+        return elementHelper.getAttribute(PasswordTextbox,"placeholder");
+    }
+
+    public String shouldSeeTheConfirmPasswordTitle(){
+        return elementHelper.getText(ConfirmPasswordTitle);
+    }
+
+    public String shouldSeeTheConfirmPasswordTextbox(){
+        return elementHelper.getAttribute(ConfirmPasswordTextbox, "placeholder");
+    }
+
+    public String shouldSeeTheTradeLicenseNumberTitle(){
+        return elementHelper.getText(TradeLicenseNumberTitle);
+    }
+
+    public String shouldSeeTheTradeLicenseNumberTextbox(){
+        return elementHelper.getAttribute(TradeLicenseNumberTextbox, "placeholder");
+    }
+
+    public String shouldSeeTheDocumentTitle(){
+        return elementHelper.getText(DocumentTitle);
+    }
+
+    public String shouldSeeTheDocumentTextbox(){
+        return elementHelper.getAttribute(DocumentTextbox, "placeholder");
+    }
+
+    public String shouldSeeTheSignUpButton() {
+        return elementHelper.getText(signUpButton);
+    }
+
+    public String shouldSeeTheSıgnInBusinessAccountButton(){
+        return elementHelper.getText(SıgnInBusinessAccountButton);
     }
 }
