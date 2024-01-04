@@ -5,18 +5,19 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        tags = "@HomePage",
+        tags = "@AboutPage and @TextAndComponent",
         features = "src/test/resources/features",
         glue = {"stepDefinitions", "utils"},
         plugin = {
                 "summary",
-                "html:target/cucumber-reports"
+                "pretty",
+                "html:target/cucumber-reports.html"
         },
         monochrome = true
 )
 public class testRunner extends AbstractTestNGCucumberTests {
     @Override
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return super.scenarios();
     }
