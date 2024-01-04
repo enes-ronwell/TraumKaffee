@@ -1,6 +1,6 @@
 @Shop2Page2
 Feature: Shop2Page2
-
+  @New
   Scenario: Shop2 Page2 text and component control
     Given user on the ShopTwo PageTwo
     Then user should see Change Button on ShopTwo PageTwo
@@ -14,9 +14,9 @@ Feature: Shop2Page2
     Then user should see Drip Coffees Title : "Drip Coffees" on ShopTwo PageTwo
     Then user should see Drip Coffees Logo on ShopTwo PageTwo
     Then user should see Chocolate Colombia Coffee Title : "Chocolate Colombia Coffee" on ShopTwo PageTwo
-    Then user should see Chocolate Colombia coffee Price : "AED20" on ShopTwo PageTwo
+    Then user should see Chocolate Colombia coffee Price : "AED45" on ShopTwo PageTwo
     Then user should see Almond Colombia Coffee Title : "Almond Colombia Coffee" on ShopTwo PageTwo
-    Then user should see Almond Colombia Coffee Price : "AED2" on ShopTwo PageTwo
+    Then user should see Almond Colombia Coffee Price : "AED45" on ShopTwo PageTwo
     Then user should see Traum Blend Coffee Title : "Traum Blend Coffee" on ShopTwo PageTwo
     Then user should see Traum Blend Coffee Price : "AED45" on ShopTwo PageTwo
     Then user should see Traum Kickstart Coffee Title : "Traum Kickstart Coffee" on ShopTwo PageTwo
@@ -25,10 +25,10 @@ Feature: Shop2Page2
     Then user should see El Salvador Apaneca Coffee Price : "AED50" on ShopTwo PageTwo
     Then user should see Honduras Opalca Coffee Title : "Honduras Opalca Coffee" on ShopTwo PageTwo
     Then user should see Honduras Opalca Coffee Price : "AED50" on ShopTwo PageTwo
-    Then user should see Traum Kick Start Capsule Coffee Title : "Traum Kickstart Capsule Coffee x 10" on ShopTwo PageTwo
+    Then user should see Traum Kick Start Capsule Coffee Title : "Traum Kickstart Capsule Coffee x 10 (14:27:14)" on ShopTwo PageTwo
     Then user should see Traum Kick Start Capsule Coffee Price : "AED12" on ShopTwo PageTwo
     Then user should see Kenya Capsule Coffee Title :"Kenya Capsule Coffee x10" on ShopTwo PageTwo
-    Then user should see Kenya Capsule Coffee Price : "AED1" on ShopTwo PageTwo
+    Then user should see Kenya Capsule Coffee Price : "AED35" on ShopTwo PageTwo
     Then user should see Gituro Kenya Capsule Coffee Title : "Gituro (Kenya) Capsule Coffee" on ShopTwo PageTwo
     Then user should see Gituro Kenya Capsule Coffee Price : "AED65" on ShopTwo PageTwo
     Then user should see Chocolate Colombia Capsule Coffee Title : "Chocolate Colombia Capsule Coffee" on ShopTwo PageTwo
