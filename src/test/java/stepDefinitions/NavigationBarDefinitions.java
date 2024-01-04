@@ -4,6 +4,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 import pages.BecomeOurPartnerPage;
+import pages.CoffeeAtWorkPage;
 import pages.NavigationBar;
 import utils.DriverFactory;
 
@@ -207,5 +208,10 @@ public class NavigationBarDefinitions {
     public void shouldSeeNavBarAreaShoppingCartCountOnNavigationBar(String count) {
         String text = NavigationBar.shouldSeeNavBarAreaShoppingCartCount();
         Assert.assertEquals(text, count);
+    }
+
+    @When("click Navbar Area Coffee Academy on Navigation Bar")
+    public void clickNavbarAreaCoffeeAcademyOnNavigationBar() {
+        NavigationBar.clickCoffeeAcademyButton();
     }
 }
