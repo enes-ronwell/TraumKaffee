@@ -20,7 +20,7 @@ public class DriverFactory {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         getDriver().manage().deleteAllCookies();
-        getDriver().manage().window().maximize();
+        //getDriver().manage().window().maximize();
     }
 
     public static synchronized WebDriver getDriver() {

@@ -69,11 +69,6 @@ public class ElementHelper {
     public WebElement findElement(By by) {
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(by));
         scrollToElement(element);
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         return wait.until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
@@ -85,10 +80,18 @@ public class ElementHelper {
     }
 
     public void scrollToElement(WebElement element) {
-        String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);"
-                + "var elementTop = arguments[0].getBoundingClientRect().top;"
-                + "window.scrollBy(0, elementTop-(viewPortHeight/2));";
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        String scrollElementIntoMiddle = "arguments[0].scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});";
         ((JavascriptExecutor) driver).executeScript(scrollElementIntoMiddle, element);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void overElement(By by) {
