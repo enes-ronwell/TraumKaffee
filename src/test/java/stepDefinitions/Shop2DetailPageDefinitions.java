@@ -73,8 +73,9 @@ public class Shop2DetailPageDefinitions {
     }
 
     @Then("user should click Add to Basket Button on shopTwo Page")
-    public void userShouldClickAddToBasketButtonOnShopTwoPage() {
+    public void userShouldClickAddToBasketButtonOnShopTwoPage() throws InterruptedException {
         shop2DetailPage.userShouldClickAddToBasketButton();
+        Thread.sleep(5000);
     }
 
 

@@ -26,7 +26,7 @@ Feature: Shop2Page2
     Then user should see Honduras Opalca Coffee Title : "Honduras Opalca Coffee" on ShopTwo PageTwo
     Then user should see Honduras Opalca Coffee Price : "AED50" on ShopTwo PageTwo
     Then user should see Traum Kick Start Capsule Coffee Title : "Traum Kickstart Capsule Coffee x 10 (14:27:14)" on ShopTwo PageTwo
-    Then user should see Traum Kick Start Capsule Coffee Price : "AED12" on ShopTwo PageTwo
+    Then user should see Traum Kick Start Capsule Coffee Price : "AED45" on ShopTwo PageTwo
     Then user should see Kenya Capsule Coffee Title :"Kenya Capsule Coffee x10" on ShopTwo PageTwo
     Then user should see Kenya Capsule Coffee Price : "AED35" on ShopTwo PageTwo
     Then user should see Gituro Kenya Capsule Coffee Title : "Gituro (Kenya) Capsule Coffee" on ShopTwo PageTwo

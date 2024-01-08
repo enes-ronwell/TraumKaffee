@@ -21,7 +21,7 @@ Feature: Shop2DetailPage
     Then user should press Add Button in Detail page on ShopTwo Page
     Then user should click Add to Basket Button on shopTwo Page
     Then user should see Chocolate Colombia Capsule Coffee Title in basket : "Chocolate Colombia Capsule Coffee" on ShopTwo Page
-
+@deneme
   Scenario:
     Given user on the ShopTwo PageTwo
     When user click on the Chocolate Colombia Coffee on ShopTwo PageTwo
@@ -32,7 +32,7 @@ Feature: Shop2DetailPage
     Then user should press Add Button in Detail page on ShopTwo Page
     Then user should click Add to Basket Button on shopTwo PageTwo
     Then user should see Chocolate Colombia Coffee Title in basket : "Chocolate Colombia Coffee" on ShopTwo PageTwo
-
+@deneme
   Scenario:
     Given user on the ShopTwo PageTwo
     When user click on the Burundi Drip Coffee on ShopTwo PageTwo

@@ -18,7 +18,7 @@ public class Shop2Page2 {
     private final By ChangeButton = By.cssSelector(".text-shop-text");
     private final By WholeBeanCoffeesButton = By.cssSelector("[aria-label='1 / 3'] > .space-x-2");
     private final By CapsulesCoffeesButton = By.cssSelector(".swiper-slide-next > .space-x-2");
-    private final By DripCoffeesButton = By.xpath("//button[.='Drip Coffees']");
+    private final By DripCoffeesButton = By.cssSelector("[aria-label='3 / 3'] p");
     private final By WholeBeanCoffees = By.cssSelector(".mb-16 > div > div:nth-of-type(1) > .flex > .font-sans");
     private final By WholeBeanCoffeesLogo = By.cssSelector(".w-8[src='https://traum-medusa-production.fra1.cdn.digitaloceanspaces.com/whole-bean-coffees-1700123043251.svg']");
     private final By CapsulesCoffees = By.cssSelector(".mb-16 div:nth-of-type(2) > .flex > .font-sans");
@@ -64,13 +64,13 @@ public class Shop2Page2 {
     private final By TraumBlendCapsuleCoffeeImage = By.cssSelector("[src='https://traum-medusa-production.fra1.cdn.digitaloceanspaces.com/traum-blend-caps-new-1686579371610.jpg']");
     private final By BurundiDripCoffeeImage = By.cssSelector("[src='https://traum-medusa-production.fra1.cdn.digitaloceanspaces.com/5DRIP-1686580994271.jpg']");
     private final By ElSalvadorApanecaDripCoffeeImage = By.cssSelector("[src='https://traum-medusa-production.fra1.cdn.digitaloceanspaces.com/el-salvador-drip-new-1686580727903.jpg']");
-    private final By WholeBeanCoffeesArea = By.cssSelector(".mb-16 > div > div:nth-of-type(1) > .flex > .font-sans");
-    private final By CapsulesCoffeesArea = By.cssSelector(".mb-16 div:nth-of-type(2) > .flex > .font-sans");
-    private final By DripCoffeesArea = By.cssSelector(".mb-16 div:nth-of-type(3) > .flex > .font-sans");
-    private final By Basket = By.cssSelector(".uppercase.text-white");
-    private final By NoItems = By.cssSelector("[width='100']>path");
-    private final By CompleteYourOrder = By.cssSelector(".w-full.flex-row > div:nth-of-type(2)");
-    private final By AED = By.cssSelector(".w-full.flex-row > div:nth-of-type(3)");
+    private final By WholeBeanCoffeesArea = By.cssSelector(".mb-16 > div > div:nth-child(1) > .flex");
+    private final By CapsulesCoffeesArea = By.cssSelector(".mb-16 > div > div:nth-child(2) > .flex");
+    private final By DripCoffeesArea = By.cssSelector(".mb-16 > div > div:nth-child(3) > .flex");
+    private final By Basket = By.cssSelector(".max-w-5xl>div>p");
+    private final By NoItems = By.cssSelector(".h-64>div");
+    private final By CompleteYourOrder = By.cssSelector(".h-28.mx-0>div>div>div:nth-child(2)");
+    private final By AED = By.cssSelector(".h-28.mx-0>div>div>div:nth-child(3)");
 
 
     public void userOnTheShopTwoPageTwo() {
